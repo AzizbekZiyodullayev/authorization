@@ -9,7 +9,7 @@ type InMemoryAuth struct {
 func (a *InMemoryAuth) Register(u User) error {
 	for _, user := range a.users {
 		if user.Username == u.Username {
-			return errors.New("This user is already exist")
+			return errors.New("This  user is already  exist")
 		}
 	}
 
